@@ -1,8 +1,8 @@
+import Header from "./Header"
+
 const Contact = () => {
   return (
-      <h2 className="">
-        Contact
-      </h2>
+    <Header>Contact</Header>
   )
 }
 

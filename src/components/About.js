@@ -1,8 +1,8 @@
+import Header from "./Header"
+
 const About = () => {
   return (
-      <h2 className="">
-        About
-      </h2>
+    <Header>About</Header>
   )
 }
 

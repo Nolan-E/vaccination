@@ -1,8 +1,8 @@
+import Header from "./Header"
+
 const Data = () => {
   return (
-      <h2 className="">
-        Data
-      </h2>
+    <Header>Data</Header>
   )
 }
 
