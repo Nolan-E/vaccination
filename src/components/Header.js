@@ -1,6 +1,6 @@
 const Header = (props) => {
   return (
-    <header className="text-4xl">{props.children}</header>
+    <header className="py-4 text-4xl">{props.children}</header>
   )
 }
 
