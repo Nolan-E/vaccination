@@ -1,5 +1,5 @@
 const Data = () => {
-  return <div>Data</div>
+  return <div className="text-xl">Data</div>
 }
 
 export default Data
