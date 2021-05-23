@@ -6,15 +6,17 @@ import Data from "./Data"
 
 const App = () => {
   return (
-    <div className="lg:px-16 px-6 bg-gray-700 flex flex-col flex-wrap items-center lg:py-0 py-2">
-      <Router>
+    <Router>
+      <div className="flex flex-col items-center">
         <NavBar />
-        <Switch>
-          <Route path="/data" component={Data} />
-          <Route path="/" component={Home} />
-        </Switch>
-      </Router>
-    </div>
+        <div className="h-screen w-2/3 max-w-screen-lg flex justify-center bg-gray-200 rounded-xl">
+          <Switch>
+            <Route path="/data" component={Data} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </div>
+      </div>
+    </Router>
   )
 }
 
