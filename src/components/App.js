@@ -11,7 +11,7 @@ const App = () => {
     <Router>
       <div className="flex flex-col items-center">
         <NavBar />
-        <div className="h-screen w-1/2 max-w-screen-lg flex flex-col items-center bg-gray-200 rounded-xl">
+        <div className="h-screen w-1/2 max-w-screen-lg flex flex-col items-center">
           <Switch>
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />

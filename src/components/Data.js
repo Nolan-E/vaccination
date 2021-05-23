@@ -20,9 +20,9 @@ const Data = () => {
         {allProvSummary &&
           allProvSummary.map((prov) => {
             return (
-              <ul className="text-center" key={prov.province}>
-                <li>{provName(prov.province)}</li>
-                <li>Date: {prov.date}</li>
+              <ul className="text-center bg-gray-200 rounded-xl" key={prov.province}>
+                <li className="text-lg font-semibold">{provName(prov.province)}</li>
+                <li className="text-sm font-medium">{prov.date}</li>
                 <li>New Cases: {prov.change_cases}</li>
                 <li>New Vaccinations: {prov.change_vaccinations}</li>
               </ul>
