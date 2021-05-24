@@ -29,11 +29,10 @@ const provName = (province) => {
     default:
       return "N/A"
   }
-
 }
 
 const monthName = (date) => {
-  const monthStr = String(date.split('-')[1])
+  const monthStr = String(date.split("-")[1])
   switch (monthStr) {
     case "O1":
       return "January"
