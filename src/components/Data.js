@@ -16,16 +16,20 @@ const Data = () => {
   return (
     <>
       <Header>Data</Header>
-      <div className="p-6 grid gap-y-8 gap-x-12 lg:grid-cols-2 xl:grid-cols-2">
+      <div className="p-6 grid gap-y-3 gap-x-4 lg:grid-cols-2 xl:grid-cols-2">
         {allProvSummary &&
           allProvSummary.map((prov) => {
             return (
-              <ul className="text-center bg-gray-200 rounded-xl" key={prov.province}>
-                <li className="text-lg font-semibold">{provName(prov.province)}</li>
-                <li className="text-sm font-medium">{prov.date}</li>
-                <li>New Cases: {prov.change_cases}</li>
-                <li>New Vaccinations: {prov.change_vaccinations}</li>
-              </ul>
+              <div key={provName(prov.province)} className="text-center px-4 py-2 divide-y divide-gray-400 bg-gray-200 rounded-xl">
+                <header  className="text-lg font-semibold">
+                  {provName(prov.province)}
+                </header>
+                <ul key={prov.province}>
+                  <li className="text-sm font-medium">{prov.date}</li>
+                  <li>New Cases: {prov.change_cases}</li>
+                  <li>New Vaccinations: {prov.change_vaccinations}</li>
+                </ul>
+              </div>
             )
           })}
       </div>
