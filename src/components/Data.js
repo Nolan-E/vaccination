@@ -20,8 +20,11 @@ const Data = () => {
         {allProvSummary &&
           allProvSummary.map((prov) => {
             return (
-              <div key={provName(prov.province)} className="text-center px-4 py-2 divide-y divide-gray-400 bg-gray-200 rounded-xl">
-                <header  className="text-lg font-semibold">
+              <div
+                key={provName(prov.province)}
+                className="text-center px-4 py-2 divide-y divide-gray-400 bg-gray-200 rounded-xl"
+              >
+                <header className="text-lg font-semibold">
                   {provName(prov.province)}
                 </header>
                 <ul key={prov.province}>
